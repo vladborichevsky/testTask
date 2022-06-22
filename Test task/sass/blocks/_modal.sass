@@ -1,0 +1,314 @@
+.overlay
+	display: none
+	position: fixed
+	top: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(0, 0, 0, 0.56)
+	z-index: 2
+	&_active
+		display: block
+.modal
+	position: absolute
+	width: 550px
+	height: 650px
+	border-radius: 35px
+	top: 50%
+	left: 50%
+	transform: translate(-50% , -50%)
+	background-color: #f2f2f2
+	padding: 70px 97px 93px 97px
+	&__title
+		font-style: normal;
+		font-weight: 500;
+		font-size: 30px;
+		line-height: 30px;
+		text-align: center;
+		letter-spacing: 0.02em;
+		color: $black
+	&__subtitle
+		margin-top: 14px
+		font-style: normal
+		font-weight: 400
+		font-size: 16px
+		line-height: 24px
+		text-align: center
+		color: $black
+	&__descr
+		margin-top: 24px
+		font-style: normal
+		font-weight: 400
+		font-size: 12px
+		line-height: 15px
+		text-align: center
+		color: $black
+	&__close
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 35px
+		height: 35px
+		position: absolute
+		top: 50px
+		right: 50px
+		font-size: 30px
+		cursor: pointer
+		line-height: 25px
+		border-radius: 100%
+		&:hover
+			transition: all 0.5s
+			filter: drop-shadow(16px 16px 20px red) invert(75%)
+input
+	width: 356px
+	height: 85px
+	background: #FFFFFF
+	box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.05)
+	border-radius: 500px
+	border: none
+	padding: 24px 84px 24px 46px
+.submit
+	width: 356px
+	height: 85px
+	background: $orange
+	box-shadow: inset 0px 0px 17px rgba(255, 255, 255, 0.25)
+	border-radius: 500px
+	border: none
+	margin-top: 24px
+	color: #FFFFFF
+	font-style: normal
+	font-weight: 600
+	font-size: 16px
+	line-height: 20px
+	align-items: center
+	letter-spacing: 0.02em
+	position: relative
+	padding: 32px 87px 33px 45px
+	&:hover
+		transition: all 0.5s
+		background: #ca660e
+	&:after
+		content: url("../img/arrow_overlay.svg")
+		position: absolute
+		top: 29px
+		right: 85px
+.feed-form__policy
+	margin: 20px 0 0 15px
+	display: flex
+	input
+		width: 18px
+		height: 17.65px
+		background: $orange
+		border-radius: 4px
+		margin-right: 20px
+	span
+		font-style: normal
+		font-weight: 500
+		font-size: 12px
+		line-height: 21px
+		align-items: center
+		color: $black
+		a
+			text-decoration: none
+			color: $orange
+.feed-form
+	margin-top: 57px
+	position: relative
+	&:before
+		content: 'Введите номер телефона'
+		position: absolute
+		top: -22px
+		left: 45px
+		font-style: normal
+		font-weight: 400
+		font-size: 12px
+		line-height: 15px
+		color: $black
+.aside__modal
+	display: none
+	width: 290px
+	border-radius: 20px
+	background-color: #ffffff
+	padding: 0 15px 14px 15px
+	position: absolute
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -40%)
+	z-index: 1
+	&:before
+		content: ''
+		position: absolute
+		width: 290px
+		height: 100px
+		transform: skew(20deg)
+		transform: skewY(0.09rad)
+		background: #ffffff
+		border-radius: 20px
+	&__overlay
+		display: none
+		width: 100%
+		height: 100%
+		position: fixed
+		background-color: rgba(0, 0, 0, 0.56)
+		z-index: 10
+		top: 0
+		left: 0
+	&__items
+		width: 70%
+		font-style: normal
+		font-weight: 500
+		font-size: 14px
+		line-height: 15px
+		text-align: center
+		color: $black
+		span
+			font-weight: 700
+	&__close
+		display: block
+		width: 33px
+		height: 33px
+		border-radius: 100%
+		background-color: $orange
+		position: absolute
+		top: 0
+		right: 15px
+		img
+			width: 50%
+			position: absolute
+			top: 8px
+			left: 8px
+	&__devider
+		margin-bottom: 0
+.mobile__menu
+	position: fixed
+	top: 0
+	width: 100%
+	height: 100%
+	background-color: #EDF2F5
+	z-index: 10
+	&__header
+		padding-top: 10px
+		display: grid
+		grid-template-columns: 0.4fr 1fr 0.3fr
+	&__logo
+		padding-left: 10%
+		img
+			width: 100%
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+	&__call_us
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		&__title
+			margin-bottom: 6px
+			font-style: normal
+			font-weight: 500
+			font-size: 12px
+			line-height: 15px
+			text-align: center
+			letter-spacing: 0.02em
+			color: $black
+			span
+				font-weight: 700
+		&__descr
+			font-style: normal
+			font-weight: 600
+			font-size: 15px
+			line-height: 15px
+			text-align: center
+			letter-spacing: 0.04em
+			color: $green
+			border: none
+			border-bottom: dotted
+			border-color: $green
+			margin-top: 5px
+	&__phone
+		font-style: normal
+		font-weight: 600
+		font-size: 30px
+		line-height: 27px
+		text-align: center
+		letter-spacing: 0.05em
+		color: $black
+		text-decoration: none
+	&__close
+		display: flex
+		justify-content: center
+		align-items: center
+		img
+			width: 30%
+	&__wrapper
+		margin-top: 20px
+		display: flex
+		flex-direction: column
+	&__items
+		margin-top: 10px
+		font-weight: 500
+		font-size: 14px
+		line-height: 140%
+		letter-spacing: 0.05em
+		text-transform: uppercase
+		color: $black
+		text-decoration: none
+		align-items: center
+		text-align: center
+	&__text
+		font-size: 10px
+		margin-top: 30px
+		span
+			font-weight: 700
+	&__price
+		margin-top: 20px
+		display: flex
+		justify-content: center
+		align-items: center
+		&__type
+			height: 43px
+			width: 43px
+			font-style: normal
+			font-weight: 600
+			font-size: 11px
+			line-height: 43px
+			letter-spacing: 0.04em
+			color: $green
+			border-radius: 100%
+			background-color: #FFFFFF
+			text-align: center
+			margin-right: 17px
+		&__download
+			font-style: normal
+			font-weight: 600
+			font-size: 12px
+			line-height: 22px
+			text-align: center
+			letter-spacing: 0.04em
+			color: $black
+			text-decoration: none
+			border-bottom: dotted
+			border-color: $green
+	&__social_net
+		display: flex
+		justify-content: center
+		align-items: center
+		&__tiile
+			margin-top: 25px
+			margin-bottom: 15px
+			font-style: normal
+			font-weight: 400
+			font-size: 12px
+			line-height: 15px
+			text-align: center
+			letter-spacing: 0.02em
+			color: $black
+			position: relative
+			text-align: center
+			span
+				font-weight: 700
+		&__logos
+			display: flex
+			justify-content: center
+			a
+				margin-right: 14px

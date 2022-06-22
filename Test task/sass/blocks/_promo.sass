@@ -1,0 +1,298 @@
+.header
+	padding: 44px 0 0 0
+	background-color: #F5F5F5
+	&__wrapper
+		display: grid
+		grid-template-columns: 0.3fr repeat(2, 0.8fr) repeat(3, 1fr) 1.5fr 0.8fr
+		column-gap: 10px
+		background-color: #F5F5F5
+	&__items
+		font-weight: 500
+		font-size: 14px
+		line-height: 140%
+		letter-spacing: 0.05em
+		text-transform: uppercase
+		color: $black
+		text-decoration: none
+		align-items: center
+		text-align: center
+		position: relative
+		&:nth-child(n+2)
+			&:hover
+				color: $orange
+				&:after
+					content: ''
+					position: absolute
+					width: 80px
+					height: 3px
+					top: 22px
+					left: 50%
+					transform: translateX(-50%)
+					background-color: $orange	
+	&__devider
+		margin-top: 38px
+		width: 100%
+		opacity: 0.07
+		height: 2px
+		background-color: $black
+.phone
+	font-style: normal
+	font-weight: 600
+	font-size: 22px
+	line-height: 27px
+	text-align: center
+	letter-spacing: 0.05em
+	color: $black
+	text-decoration: none
+	&:hover
+		color: $orange
+		transition: all 0.5s
+	
+.promo
+	background: url(../img/bg.png) no-repeat 25%/cover
+	padding: 0 0 151.5px 0
+	&__header
+		display: grid
+		grid-template-columns: 1.4fr 1.2fr 1fr 1fr 1.3fr
+		&__text
+			display: flex
+			flex-direction: column
+			align-self: center
+			font-style: normal
+			font-weight: 500
+			font-size: 12px
+			line-height: 15px
+			text-align: center
+			color: $black
+			span
+				font-weight: 700
+	&__price
+		display: flex
+		align-items: center
+		&__type
+			height: 43px
+			width: 43px
+			font-style: normal
+			font-weight: 600
+			font-size: 11px
+			line-height: 43px
+			letter-spacing: 0.04em
+			color: $green
+			border-radius: 100%
+			background-color: #FFFFFF
+			text-align: center
+			margin-right: 17px
+		&__download
+			font-style: normal
+			font-weight: 600
+			font-size: 12px
+			line-height: 22px
+			text-align: center
+			letter-spacing: 0.04em
+			color: $black
+			text-decoration: none
+			border-bottom: dotted
+			border-color: $green
+			&:hover
+				transition: all 0.5s
+				color: $orange
+				border-color: $orange
+				
+	&__social_net
+		display: flex
+		justify-content: center
+		align-items: center
+		&__tiile
+			margin-bottom: 15px
+			font-style: normal
+			font-weight: 400
+			font-size: 12px
+			line-height: 15px
+			text-align: center
+			letter-spacing: 0.02em
+			color: $black
+			position: relative
+			text-align: center
+			span
+				font-weight: 700
+			&:before
+				content: ''
+				position: absolute
+				top: 5px
+				left: 20px
+				width: 4px
+				height: 4px
+				background-color: $green
+		&__logos
+			a
+				margin-right: 14px
+				&:hover
+					transition: all 0.5s
+					filter: contrast(200%)
+				img
+					&:hover
+						transition: all 0.5s
+						transform: scale(1.1)
+					
+	&__call_us
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		&__title
+			margin-bottom: 6px
+			font-style: normal
+			font-weight: 500
+			font-size: 12px
+			line-height: 15px
+			text-align: center
+			letter-spacing: 0.02em
+			color: $black
+			span
+				font-weight: 700
+		&__descr
+			font-style: normal
+			font-weight: 600
+			font-size: 12px
+			line-height: 15px
+			text-align: center
+			letter-spacing: 0.04em
+			color: $green
+			border: none
+			border-bottom: dotted
+			border-color: $green
+			&:hover
+				transition: all 0.5s
+				color: $orange
+				border-color: $orange
+
+
+.info__block
+	margin-top: 80px
+	display: flex
+
+aside
+	width: 225px
+	border-radius: 20px
+	background-color: #ffffff
+	padding: 0 35px 14px 35px
+	position: relative
+	z-index: 1
+	&:before
+		content: ''
+		position: absolute
+		width: 225px
+		height: 100px
+		transform: skew(20deg)
+		transform: skewY(0.09rad)
+		background: #ffffff
+		border-radius: 20px
+		top: -38px
+		left: 0
+		z-index: -1
+
+.aside__items
+	font-style: normal
+	font-weight: 500
+	font-size: 14px
+	line-height: 22px
+	text-align: center
+	color: $black
+	span
+		font-weight: 700
+
+.main__info
+	margin: 0
+	margin-left: 71px
+	h1
+		font-style: normal
+		font-weight: 300
+		font-size: 55px
+		line-height: 85px
+		color: $black
+		span
+			font-weight: 500
+	&__subtitle
+		display: flex
+		position: relative
+		&__circles
+			position: absolute
+			top: 9px
+			left: 0
+		&__text
+			margin-left: 65px
+			font-style: normal
+			font-weight: 400
+			font-size: 32px
+			line-height: 39px
+			color: $black
+	&__descr
+		margin-top: 38px
+		margin-left: 40px
+		font-style: normal
+		font-weight: 500
+		font-size: 14px
+		line-height: 22px
+		letter-spacing: 0.02em
+		text-align: center
+		color: $black
+		width: 240px
+		position: relative
+		&:before
+			content: url("../img/icon_hand_promo.svg")
+			position: absolute
+			top: 0
+			left: -40px
+		span
+			font-weight: 700
+	&__button
+		margin-top: 45px
+		padding: 27px 0 29px 53px
+		box-shadow: inset 0px 0px 22px rgba(255, 255, 255, 0.25)
+		border-radius: 500px
+		border: none
+		font-style: normal
+		font-weight: 600
+		font-size: 14px
+		line-height: 22px
+		text-align: center
+		letter-spacing: 0.02em
+		text-transform: uppercase
+		color: #FFFFFF
+		position: relative
+		&:after
+			content: url("../img/arrow_btns_promo.svg")
+			position: absolute
+			top: 40px
+			right: 55px
+			
+.button
+	&_green
+		background: $green
+		padding-right: 109px
+		margin-right: 18px
+		&:hover
+			transition: all 0.5s
+			background: #21E27C
+	&_orange
+		background: $orange
+		padding-right: 100px
+		&:hover
+			transition: all 0.5s
+			background: #FD9C49
+
+.hamburger
+	display: none
+.aside__plus
+	display: none
+.aside__items__descr
+	display: none
+.mobile__menu
+	display: none
+
+
+
+
+
+
+
